@@ -20,7 +20,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container} behavior="padding">
-        <LoginForm />
+        <LoginForm style={styles.login}/>
       </View>
     );
   }
@@ -29,6 +29,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#f2f2f2',
     // alignItems: 'center',
-    // justifyContent: 'center'
+    justifyContent: 'center',
+    height: '100%',
+    padding: 50
+  },
+  login: {
+    flex: 1
   }
 });
